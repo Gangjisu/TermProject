@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name=" 레이어 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1700.8 566.9">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 200px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 30px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="28.4" y="28.4" width="510.2" height="510.2" rx="141.7" ry="141.7"/>
+  <g class="cls-3">
+    <g class="cls-3">
+      <text class="cls-1" transform="translate(572.3 252.8)"><tspan x="0" y="0">CLOUD</tspan></text>
+      <text class="cls-1" transform="translate(572.3 452.8)"><tspan x="0" y="0">GAMEING</tspan></text>
+    </g>
+  </g>
+  <g>
+    <circle class="cls-2" cx="250.6" cy="254" r="113.4"/>
+    <circle class="cls-2" cx="156.2" cy="341" r="85"/>
+    <circle class="cls-2" cx="375" cy="294" r="85"/>
+    <circle class="cls-2" cx="439.1" cy="369.4" r="56.7"/>
+    <polygon class="cls-2" points="290 294 439.1 426.1 156.2 426 290 294"/>
+  </g>
+</svg>
