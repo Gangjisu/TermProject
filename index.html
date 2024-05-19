@@ -97,17 +97,16 @@
                 <li><a href="#">CSS</a></li>
                 <li><a href="#">Java Script</a></li>
             </ul>
+            <ul class="search-container banner_4 banner">
+                <input type="text" id="search-input" placeholder="...">
+                <button id="search-button"><img src=""></button>
+            </ul>
         </ul>
     </footer>
 
     
     <!--JS-->
-    <script>
-        document.getElementById('toggleButton').addEventListener('click', function(event) {
-            event.preventDefault(); // a 태그의 기본 이벤트 방지
-            this.parentElement.classList.toggle('active'); // 클릭된 a 태그의 부모 요소에 'active' 클래스 토글
-        });
+    <script src="script.js"></script>
 
-    </script>
 </body>
 </html>
