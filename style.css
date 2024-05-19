@@ -1,0 +1,133 @@
+/*포함*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/*전역 설정*/
+.background {
+    top: 0px;
+    background-image: url(https://github.com/Gangjisu/TermProject/blob/main/assets/travel_picture/picture_kyoto_2.jpg?raw=true);
+    background-size: cover;
+    position: fixed;
+    z-index: -50; /*최후순위*/
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none; /* 링크의 밑줄 제거 */  
+    color: inherit; /* 링크의 색상 제거 */
+    transition: 0.3s;
+}
+
+a:hover, a:active {
+    color: white;
+    transition: 0.3s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans Korean", system, sans-serif;
+}
+
+
+
+/*상단*/
+
+.page_head {
+    margin-top: 50px;
+}
+
+.page_head > img {
+    width: 200px;
+    margin-left: 50px;
+    background-color: #f74843;
+    padding: 15px;
+}
+
+/*소개란*/
+.introduction {
+    margin-left: 50px;
+}
+
+.introduction > .content {
+    color: white;
+}
+
+
+/*메뉴*/
+
+.title {
+    font-size: 50pt;
+    color: #f74843;
+    font-weight: 900;
+}
+
+.title > a {
+    margin-left: 50px;
+}
+
+.menu {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* iframe 초기 상태를 숨김 */
+.major_content {
+    padding-top: 10px;
+    height: 0px;
+    overflow: hidden;
+    transition: 3s;
+}
+
+/* iframe이 활성화 상태일 때만 보임 */
+.active .major_content {
+    height: 9000px; /*3000 * 3 page*/
+    transition: 3s;
+}
+
+/* a 태그가 활성화 상태일 때 색상 변경 */
+.active a {
+    color: #ffffff; /* 클릭 시 색상을 하얀색으로 변경 */
+}
+
+
+
+/*하단의 contact 및 배너*/
+footer {
+    background-color: #f74843;
+    height: 250px;
+    font-size: 11pt;
+    font-weight: 900;
+}
+
+footer > ul {
+    color: white;
+    display: flex;
+}
+
+.banner {
+    margin-top: 80px;
+    margin-left: 65px;
+}
+
+.banner_1 {
+    
+    width: 255px;
+    height: 100px;
+    text-align: left;
+    font-size: 20;
+    font-weight: 250;
+}    
+.banner_1 > img {
+    width: 250px;
+}
+
+li > p {
+    font-size: 20pt;
+    color: white;
+}
+
+li {
+    list-style: none;
+    color: black;
+}
