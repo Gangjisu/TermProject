@@ -1,0 +1,158 @@
+/*포함-------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/*전역 설정-------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: inherit; /* 링크의 색상 제거 */
+    transition: 0.3s;
+}
+a:hover, a:active {
+    color: #f74843;
+    transition: 0.3s;
+}
+
+/*top bar*/
+.top_a {
+    margin-left: 30px;
+    font-size: 14pt;
+    font-weight: 900;
+}
+
+.current_site {
+    border-bottom: black solid 3pt;
+}
+
+.page_head {
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+}
+
+.img_box {
+    width: 200px;
+    height: 69px;
+    padding-inline: 15px;
+    margin-left: 50px;
+    background-color: whitesmoke;
+    padding-top: 20px;
+}
+
+.img_box > .site_img {
+    width: 200px;
+    height: 88px;
+    background: url("https://raw.githubusercontent.com/Gangjisu/TermProject/ccf2f8a273c6ff65660cba64b47802a9a94ec4ca/assets/SVG/Logo.svg") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+/*메인 -----------*/
+section {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+textarea {
+    outline: none;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 12pt;
+    resize: none;
+}
+header {
+    display: flex;
+}
+
+header > input[type="text"] {
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    font-size: 13px;
+    outline: none;
+    margin-bottom: 20px;
+}
+header > button {
+    font-size: 16px;
+    cursor: pointer;
+}
+img {
+    width: 200px;
+    height: 80px;
+}
+.tool_btn {
+    width: 100px;
+    height: 45px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-inline: 5px;
+    box-shadow: 0 2px 4px 0 rgba(122, 122, 122, 0.75);
+    border: black solid;
+    border-radius: 2pt;
+    font-weight: 100;
+    font-size: 11pt;
+    overflow: hidden;
+}
+
+.tool_pt {
+    height: 42px;
+}
+
+#pt_changer {
+    height: 42px;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+/*하단의 contact 및 배너---------------------------*/
+footer {
+    font-family: "Noto Sans Korean", system, sans-serif;
+    background-color: whitesmoke;
+    height: 250px;
+    font-size: 11pt;
+    font-weight: 900;
+}
+
+footer > ul {
+    color: #f74843;
+    display: flex;
+}
+
+.banner {
+    margin-top: 80px;
+    margin-left: 65px;
+}
+
+.banner_1 {
+    width: 255px;
+    height: 100px;
+    text-align: left;
+    font-size: 12pt;
+    font-weight: 250;
+}
+.banner_1 > img {
+    width: 250px;
+    height: auto;
+}
+
+.banner_4 {
+    width: 215px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.banner > li > p {
+    font-size: 20pt;
+    color: #f74843;
+}
+
+.banner > li {
+    list-style: none;
+    color: black;
+}

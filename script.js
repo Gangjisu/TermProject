@@ -10,6 +10,7 @@ document.querySelectorAll('.toggleButton').forEach(button => {
 
 // Search
 document.getElementById('search-button').addEventListener('click', function() {
+
     // 검색어 가져오기
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
     
@@ -34,3 +35,28 @@ document.getElementById('search-button').addEventListener('click', function() {
         }
     });
 });
+
+//memo page
+
+//note download
+function downloadNote() {
+    var text = document.getElementById("notepad").value; //내용 변수
+    var filename = document.getElementById("filename").value || "note"; //input 칸에서 파일이름 가져오기
+    var blob = new Blob([text], { type: "text/plain" }); //blob 객체 이용 내용 읽기
+    var link = document.createElement("a"); //앵커 태그처럼 작동
+    link.href = URL.createObjectURL(blob); //내용 만들어 지정
+    link.download = filename + ".txt"; //내용 다운로드
+    document.body.appendChild(link); //body에 link 변수 생성
+    link.click();
+    document.body.removeChild(link); //body에 link 변수 삭제
+}
+
+//note font-change
+function change_font() {
+    var note = document.getElementById("notepad");
+    note.style.fontSize = document.getElementById("pt_changer").value + "pt";
+}
+
+
+
+
