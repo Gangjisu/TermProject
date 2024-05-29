@@ -6,8 +6,6 @@ document.querySelectorAll('.toggleButton').forEach(button => {
     });
 });
 
-
-
 // Search
 document.getElementById('search-button').addEventListener('click', function() {
 

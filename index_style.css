@@ -77,7 +77,7 @@ a:hover, a:active {
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: inherit; /*변경되어야함*/
 }
 
 /*소개란---------------------------*/
@@ -89,10 +89,9 @@ a:hover, a:active {
     display: flex;
 }
 
-.introduction > .infomation {
-    width: 500px;
+.introduction > .information {
+    width: 600px;
     height: 100px;
-    border: 1px solid;
     color: white;
 }
 
@@ -101,8 +100,22 @@ a:hover, a:active {
     height: 160px;
 }
 
+.information > img {
+    padding: 10px;
+    border-bottom: 3px white solid;
+}
+
 
 /*메뉴--------------------------------*/
+.title_content > span {
+    margin: 0 auto;
+    margin-block: 50px;
+    width: 800px;
+    height: 200px;
+    border: black solid;
+    display: flex;
+}
+
 
 .title {
     font-size: 50pt;
@@ -134,7 +147,7 @@ a.toggleButton:hover {
 
 /* 'active' 클래스가 적용된 컨텐츠의 스타일 설정 */
 .title.active .title_content {
-    height: 100px; /* 'active' 클래스가 적용된 경우 컨텐츠를 표시 */
+    height: 300px; /* 'active' 클래스가 적용된 경우 컨텐츠를 표시 */
     transition: 1s;
 }
 
@@ -162,7 +175,7 @@ footer > ul {
     width: 255px;
     height: 100px;
     text-align: left;
-    font-size: 20;
+    font-size: 20pt;
     font-weight: 250;
 }    
 .banner_1 > img {
