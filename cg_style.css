@@ -1,0 +1,201 @@
+/*배경*/
+body {
+    background-color: #E8E8E8;
+}
+*{padding:0;margin:0}
+li{list-style:none}
+a{
+    outline: none;
+    text-decoration:none;
+    color: inherit; /* 링크의 색상 제거 */
+    transition: 0.3s;
+    cursor: pointer;
+}
+a:hover, a:active {
+    color: #f74843;
+    transition: 0.3s;
+}
+
+/*top bar*/
+
+.top_bar {
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+}
+
+.top_a {
+    margin-left: 50px;
+    font-size: 14pt;
+    font-weight: 900;
+}
+
+.current_site {
+    border-bottom: black solid 3pt;
+}
+
+.page_head {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.img_box {
+    width: 200px;
+    height: 69px;
+    padding-inline: 15px;
+    margin-left: 50px;
+    background-color: rgba(245, 245, 245, 0.5);
+    padding-top: 20px;
+}
+
+.img_box > .site_img {
+    width: 200px;
+    height: 88px;
+    background: url("https://raw.githubusercontent.com/Gangjisu/TermProject/ccf2f8a273c6ff65660cba64b47802a9a94ec4ca/assets/SVG/Logo.svg") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/*검색박스*/
+.search-container {
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 33px;
+}
+
+#search-input {
+    font-size: 13pt;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    color: white;
+    border-bottom: #ffffff 1px solid;
+}
+#search-input:focus {
+    outline: none;
+}
+
+#search-button {
+    background-color: rgb(255, 255, 255, 0);
+    border: 1px solid rgb(255, 255, 255, 0);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+}
+
+#search-button:hover{
+    background-color: rgb(169, 169, 169, 0.5);
+}
+
+#search-button:active{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.highlight {
+    background-color: inherit; /*변경되어야함*/
+}
+
+/*페이지 구간 v */
+
+/*메인*/
+.main {
+    background-color: rgb(255,255,255,1);
+    padding: 100px;
+    margin: 0 auto;
+    width: 750px;
+    height: auto;
+    line-height: 25px;
+}
+
+.page_index {
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(180,180,180,1);
+}
+
+.img {
+    padding: 20px;
+}
+
+.page_a {
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px rgb(180,180,180,1);
+}
+
+.page_2 {
+    margin-top: 200px;
+}
+
+.top_pic {
+    margin: 0 auto;
+    padding: 5%;
+    width: 89%;
+}
+
+/*기능*/
+.ontop {
+    width: 50px;
+    height: 35px;
+    top: 90%;
+    left: 3%;
+    position: fixed;
+    background-color: rgb(0, 0, 0,0.1);
+    text-align:center;
+    padding-top: 15px;
+    font-weight: 900;
+    border: 1pt dotted rgb(0, 0, 0,0.1);
+    border-radius: 10px;
+
+}
+.ontop > a {
+    color: white;
+}
+
+/*하단의 contact 및 배너---------------------------*/
+footer {
+    font-family: "Noto Sans Korean", system, sans-serif;
+    background-color: whitesmoke;
+    height: 250px;
+    margin-top: 100px;
+    font-size: 11pt;
+    font-weight: 900;
+}
+
+footer > ul {
+    color: #f74843;
+    display: flex;
+}
+
+.banner {
+    margin-top: 80px;
+    margin-left: 65px;
+}
+
+.banner_1 {
+    width: 255px;
+    height: 100px;
+    text-align: left;
+    font-size: 12pt;
+    font-weight: 250;
+}
+.banner_1 > img {
+    width: 250px;
+    height: auto;
+}
+
+.banner_4 {
+    width: 215px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.banner > li > p {
+    font-size: 20pt;
+    color: #f74843;
+}
+
+.banner > li {
+    list-style: none;
+    color: black;
+}

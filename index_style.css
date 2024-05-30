@@ -85,14 +85,25 @@ a:hover, a:active {
     margin-left: 50px;
 }
 
+.board {
+    border: rgba(255, 255, 255, 0.3) solid 2px;
+    position: absolute;
+    width: 440px;
+    height: 150px;
+    top: 255px;
+    left: 215px;
+    z-index: -10;
+}
+
 .introduction > li {
     display: flex;
+
 }
 
 .introduction > .information {
     width: 600px;
     height: 100px;
-    color: white;
+    color: whitesmoke;
 }
 
 .introduction > li > img{
@@ -109,13 +120,26 @@ a:hover, a:active {
 /*메뉴--------------------------------*/
 .title_content > span {
     margin: 0 auto;
-    margin-block: 50px;
-    width: 800px;
-    height: 200px;
-    border: black solid;
+    margin-block: 100px;
+    width: 950px;
+    height: 100px;
     display: flex;
 }
 
+span > a {
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+span > a:hover {
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+span > a > img {
+    height: 100px;
+}
 
 .title {
     font-size: 50pt;
