@@ -18,8 +18,14 @@ a:hover, a:active {
 }
 
 /*top bar*/
+.top_bar {
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
 .top_a {
-    margin-left: 30px;
+    margin-left: 50px;
     font-size: 14pt;
     font-weight: 900;
 }
@@ -29,9 +35,9 @@ a:hover, a:active {
 }
 
 .page_head {
-    list-style: none;
     display: flex;
-    margin-top: 50px;
+    list-style: none;
+    margin-top: 10px;
 }
 
 .img_box {
@@ -39,7 +45,7 @@ a:hover, a:active {
     height: 69px;
     padding-inline: 15px;
     margin-left: 50px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.5);
     padding-top: 20px;
 }
 

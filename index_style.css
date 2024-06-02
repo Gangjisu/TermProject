@@ -4,8 +4,9 @@
 /*전역 설정-------------------------*/
 .background {
     top: 0px;
-    background-image: url(https://github.com/Gangjisu/TermProject/blob/main/assets/travel_picture/picture_kyoto_2.jpg?raw=true);
+    background-image: url(https://cdn.pixabay.com/photo/2023/05/05/06/19/street-7971714_1280.jpg);
     background-size: cover;
+    filter: blur(3px);
     position: fixed;
     z-index: -50; /*후순위 배치*/
     width: 100%;
@@ -36,7 +37,7 @@ a:hover, a:active {
 
 .page_head {
     display: flex;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .page_head > li > img {
@@ -44,40 +45,34 @@ a:hover, a:active {
     margin-left: 50px;
     background-color: #f74843;
     padding: 15px;
+    cursor: pointer;
 }
 
 /*검색박스*/
-
-#search-input {
+.search-container {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 250px;
+    height: 20px;
+    display: flex;
+    margin-top: 50px;
+}
+#searchBox {
     font-size: 13pt;
     background-color: rgb(255, 255, 255, 0);
     border: none;
     color: white;
     border-bottom: #ffffff 1px solid;
 }
-#search-input:focus {
+#searchBox:focus {
     outline: none;
 }
-
-#search-button {
-    background-color: rgb(255, 255, 255, 0);
-    border: 1px solid rgb(255, 255, 255, 0);
-    border-radius: 50px;
-    width: 30px;
-    height: 30px;
-    padding-top: 2px;
-}
-
-#search-button:hover{
-    background-color: rgb(169, 169, 169, 0.5);
-}
-
-#search-button:active{
-    background-color: rgb(0, 0, 0, 0.5);
-}
-
 .highlight {
-    background-color: inherit; /*변경되어야함*/
+    background-color: greenyellow; /*변경되어야함*/
+}
+.search_icon {
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 /*소개란---------------------------*/
@@ -85,19 +80,8 @@ a:hover, a:active {
     margin-left: 50px;
 }
 
-.board {
-    border: rgba(255, 255, 255, 0.3) solid 2px;
-    position: absolute;
-    width: 440px;
-    height: 150px;
-    top: 255px;
-    left: 215px;
-    z-index: -10;
-}
-
 .introduction > li {
     display: flex;
-
 }
 
 .introduction > .information {

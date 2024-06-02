@@ -19,7 +19,7 @@ a:hover, a:active {
 /*top bar*/
 
 .top_bar {
-    top: 0px;
+    top: 0;
     width: 100%;
     position: fixed;
     z-index: 50;
@@ -38,7 +38,7 @@ a:hover, a:active {
 .page_head {
     display: flex;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .img_box {
@@ -60,41 +60,42 @@ a:hover, a:active {
 
 /*검색박스*/
 .search-container {
+    padding: 15px;
     margin-left: auto;
     margin-right: 30px;
-    margin-top: 33px;
+    width: 215px;
+    height: 20px;
+    display: flex;
+    margin-top: 20px;
+    transition: 1s;
 }
-
-#search-input {
+#searchBox {
     font-size: 13pt;
     background-color: rgb(255, 255, 255, 0);
     border: none;
-    color: white;
-    border-bottom: #ffffff 1px solid;
+    color: gray;
+    border-bottom: gray 1px solid;
 }
-#search-input:focus {
+#searchBox:focus {
     outline: none;
 }
-
-#search-button {
-    background-color: rgb(255, 255, 255, 0);
-    border: 1px solid rgb(255, 255, 255, 0);
-    border-radius: 50px;
-    width: 30px;
-    height: 30px;
-    padding-top: 2px;
-}
-
-#search-button:hover{
-    background-color: rgb(169, 169, 169, 0.5);
-}
-
-#search-button:active{
-    background-color: rgb(0, 0, 0, 0.5);
+.search-container:has(#searchBox:focus)
+{
+    transition: 0.5s;
+    background-color: whitesmoke;
 }
 
 .highlight {
-    background-color: inherit; /*변경되어야함*/
+    background-color: greenyellow; /*변경되어야함*/
+}
+.search_icon {
+    border-radius: 15px;
+    background-color: gray;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 /*페이지 구간 v */

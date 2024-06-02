@@ -18,12 +18,14 @@ a:hover, a:active {
 /*top bar*/
 
 .top_bar {
+    top: 0;
+    width: 100%;
     position: fixed;
     z-index: 50;
 }
 
 .top_a {
-    margin-left: 30px;
+    margin-left: 50px;
     font-size: 14pt;
     font-weight: 900;
 }
@@ -33,9 +35,9 @@ a:hover, a:active {
 }
 
 .page_head {
-    list-style: none;
     display: flex;
-    margin-top: 20px;
+    list-style: none;
+    margin-top: 10px;
 }
 
 .img_box {

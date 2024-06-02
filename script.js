@@ -6,30 +6,28 @@ document.querySelectorAll('.toggleButton').forEach(button => {
     });
 });
 
-// Search
-document.getElementById('search-button').addEventListener('click', function() {
+//search
+document.addEventListener('DOMContentLoaded', function() {
+    var searchBox = document.getElementById('searchBox');
+    var content = document.getElementById('content');
 
-    // 검색어 가져오기
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
-    
-    // 모든 요소 초기화
-    const elements = document.querySelectorAll('.content *');
-    elements.forEach(element => {
-        element.classList.remove('highlight'); // 기존 하이라이트 제거
-    });
+    searchBox.addEventListener('input', function() {
+        var searchText = searchBox.value.toLowerCase();
+        var paragraphs = content.getElementsByTagName('p');
 
-    // 검색어가 빈 문자열인 경우 종료
-    if (!searchTerm) {
-        return;
-    }
+        // 하라이트 제거
+        for (var i = 0; i < paragraphs.length; i++) {
+            var paragraph = paragraphs[i];
+            var text = paragraph.innerHTML.replace(/<\/?span[^>]*>/g, "");
+            paragraph.innerHTML = text;
+        }
 
-    // 검색어와 일치하는 첫 번째 요소로 스크롤 이동
-    let found = false;
-    elements.forEach(element => {
-        if (!found && element.textContent.toLowerCase().includes(searchTerm)) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            element.classList.add('highlight');
-            found = true;
+        if (searchText) {
+            for (var i = 0; i < paragraphs.length; i++) {
+                var paragraph = paragraphs[i];
+                var regex = new RegExp('(' + searchText + ')', 'gi');
+                paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+            }
         }
     });
 });
@@ -55,6 +53,16 @@ function change_font() {
     note.style.fontSize = document.getElementById("pt_changer").value + "pt";
 }
 
-
-
-
+//contact
+function address()
+{
+    alert("Korea. 17035 464-7 102-201");
+}
+function phone()
+{
+    alert("+86 10-5915-5446");
+}
+function email()
+{
+    alert("kjs511808@kku.ac.kr");
+}
