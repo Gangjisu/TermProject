@@ -19,14 +19,13 @@ a:hover, a:active {
 /*top bar*/
 .top_bar {
     top: 0;
-    width: 100%;
+    width: 96%;
     z-index: 50;
-    position: fixed;
 }
 
 .top_a {
     margin-left: 50px;
-    font-size: 14pt;
+    font-size: 30pt;
     font-weight: 900;
 }
 
@@ -35,16 +34,14 @@ a:hover, a:active {
 }
 
 .page_head {
-    display: flex;
     list-style: none;
-    margin-top: 10px;
 }
 
 .site_img {
-    width: 200px;
-    height: 88px;
-    padding-inline: 15px;
-    margin-left: 50px;
+    width: 100%;
+    height: auto;
+    padding-inline: 3%;
+    padding-block: 5px;
     background-color: rgba(245, 245, 245, 0.5);
     cursor: pointer;
 }
@@ -94,35 +91,33 @@ a:hover, a:active {
 /*메인*/
 .main {
     background-color: rgb(255,255,255,1);
-    padding: 100px;
-    margin: 0 auto;
-    width: 750px;
-    height: auto;
+    padding-block: 15px;
+    padding-inline: 10px;
+    font-size: 13pt;
+
+    width: 97%;
     line-height: 25px;
 }
 
 .page_index {
+    font-size: 15pt;
+    line-height: 35px;
     font-weight: bold;
     box-shadow: 5px 5px 5px rgb(180,180,180,1);
 }
 
 .img {
-    padding: 20px;
+    padding: 30px;
 }
 
 .page_a {
-    margin-top: 100px;
-    box-shadow: 5px 5px 5px rgb(180,180,180,1);
 }
 
-.page_2 {
-    margin-top: 200px;
-}
 
 .top_pic {
     margin: 0 auto;
     padding: 5%;
-    width: 89%;
+    width: 100%;
 }
 
 /*기능*/
@@ -146,41 +141,33 @@ a:hover, a:active {
 
 /*하단의 contact 및 배너---------------------------*/
 footer {
-    font-family: "Noto Sans Korean", system, sans-serif;
-    background-color: whitesmoke;
-    height: 250px;
-    margin-top: 100px;
     width: 100%;
+    background-color: whitesmoke;
+    height: 400px;
     font-size: 11pt;
     font-weight: 900;
 }
 
 footer > ul {
     color: #f74843;
-    display: flex;
+    display: inline;
 }
 
 .banner {
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 65px;
 }
 
 .banner_1 {
+    padding-top: 50px;
     width: 255px;
     height: 100px;
     text-align: left;
-    font-size: 12pt;
+    font-size: 20pt;
     font-weight: 250;
 }
 .banner_1 > img {
-    width: 250px;
-    height: auto;
-}
-
-.banner_4 {
-    width: 215px;
-    margin-left: auto;
-    margin-right: 50px;
+    width: 100%;
 }
 
 .banner > li > p {

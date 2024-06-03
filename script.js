@@ -66,3 +66,30 @@ function email()
 {
     alert("kjs511808@kku.ac.kr");
 }
+
+//background-slide_show
+document.addEventListener('DOMContentLoaded', function change_img(){
+    //document.getElementById("wallpaper").style.transition = "1s";
+    setTimeout(() => img_set_1(), 5000);
+})
+
+// > loop
+function img_set_1() {
+    document.getElementById('wallpaper').style.backgroundImage = "url('https://cdn.pixabay.com/photo/2022/08/22/07/35/city-7403001_1280.jpg')";
+    //사진 변경
+    setTimeout(() => img_set_2(), 5000);
+    //시간 이후 다음 함수 호출
+}
+function img_set_2() {
+    document.getElementById('wallpaper').style.backgroundImage = "url('https://cdn.pixabay.com/photo/2016/11/23/15/32/pedestrians-1853552_1280.jpg')";
+    //사진 변경
+    setTimeout(() => img_set_3(), 5000);
+    //시간 이후 다음 함수 호출
+}
+function img_set_3() {
+    document.getElementById('wallpaper').style.backgroundImage = "url('https://cdn.pixabay.com/photo/2016/11/20/08/34/buildings-1842205_1280.jpg')";
+    //사진 변경
+    setTimeout(() => img_set_1(), 5000);
+    //시간 이후 다음 함수 호출
+}
+
