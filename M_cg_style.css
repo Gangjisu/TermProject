@@ -38,7 +38,7 @@ a:hover, a:active {
 }
 
 .site_img {
-    width: 100%;
+    width: 98%;
     height: auto;
     padding-inline: 3%;
     padding-block: 5px;
@@ -79,7 +79,7 @@ a:hover, a:active {
 .search_icon {
     border-radius: 15px;
     background-color: gray;
-    margin-left: 10px;
+    margin-left: 5px;
     width: 15px;
     height: 15px;
     padding: 5px;
@@ -94,8 +94,7 @@ a:hover, a:active {
     padding-block: 15px;
     padding-inline: 10px;
     font-size: 13pt;
-
-    width: 97%;
+    width: 95.5%;
     line-height: 25px;
 }
 
@@ -103,20 +102,14 @@ a:hover, a:active {
     font-size: 15pt;
     line-height: 35px;
     font-weight: bold;
-    box-shadow: 5px 5px 5px rgb(180,180,180,1);
 }
 
 .img {
-    padding: 30px;
+    padding-inline: 5%;
+    padding-block: 30px;
 }
-
-.page_a {
-}
-
 
 .top_pic {
-    margin: 0 auto;
-    padding: 5%;
     width: 100%;
 }
 
@@ -125,7 +118,7 @@ a:hover, a:active {
     width: 50px;
     height: 35px;
     top: 90%;
-    left: 3%;
+    right: 3%;
     position: fixed;
     background-color: rgb(0, 0, 0,0.1);
     text-align:center;

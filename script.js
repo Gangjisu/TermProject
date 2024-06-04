@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function change_img(){
     //document.getElementById("wallpaper").style.transition = "1s";
     setTimeout(() => img_set_1(), 5000);
 })
-
 // > loop
 function img_set_1() {
     document.getElementById('wallpaper').style.backgroundImage = "url('https://cdn.pixabay.com/photo/2022/08/22/07/35/city-7403001_1280.jpg')";
