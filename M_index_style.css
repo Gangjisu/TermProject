@@ -49,7 +49,8 @@ a:hover, a:active {
 /*검색박스*/
 .search-container {
     background-color: #f74843;
-    width: 91.5%;
+    margin-left: auto;
+    width: 280px;
     height: 25px;
     display: flex;
     padding: 20px;
@@ -70,19 +71,20 @@ a:hover, a:active {
     background-color: greenyellow; /*변경되어야함*/
 }
 .search_icon {
+    display: none;
     margin-left: 10px;
     cursor: pointer;
 }
 
 /*소개란---------------------------*/
 .introduction {
-    margin-left: 50px;
+    margin-left: 3%;
 }
 
 
 .introduction > .information {
     width: 90%;
-    height: 100px;
+    height: 350px;
     color: whitesmoke;
 }
 
@@ -122,7 +124,7 @@ span > a > img {
 }
 
 .title {
-    font-size: 50pt;
+    font-size: 40pt;
     color: #f74843;
     font-weight: 900;
 }
@@ -132,7 +134,7 @@ span > a > img {
 }
 
 .menu {
-    margin-top: 60%;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 

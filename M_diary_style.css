@@ -87,8 +87,8 @@ a:hover, a:active {
 .photo_section {
     background-color: rgb(255,255,255,1);
     top: 80px;
-    width: 400px;
-    height: 380px;
+    width: 90%;
+    height: auto;
     transition: 1s;
     box-shadow: 1px 15px 20px rgb(0, 0, 0, 0.5);
 }

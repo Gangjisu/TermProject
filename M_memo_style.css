@@ -88,12 +88,12 @@ header {
     text-align: center;
     margin-bottom: 5px;
     font-weight: 100;
-    font-size: 15pt;
+    font-size: 100%;
     overflow: hidden;
 }
 
 .tool_btn > input {
-    font-size: 15pt;
+    font-size: 100%
 }
 
 .tool_pt {

@@ -105,7 +105,8 @@ a:hover, a:active {
 }
 
 .img {
-    padding-inline: 5%;
+    width: 100%;
+    height: auto;
     padding-block: 30px;
 }
 
